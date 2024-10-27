@@ -45,14 +45,16 @@ final class Palindrome {
      * {@code false}
      */
     public static boolean isPalindromeTwoPointer(String s) {
-        if (s == null || s.length() <= 1) {
-            return true;
-        }
-        for (int i = 0, j = s.length() - 1; i < j; ++i, --j) {
-            if (s.charAt(i) != s.charAt(j)) {
+        char[] charArray= s.toChar Array();
+        int start = 0;
+        int end = word.length-1;
+        while (start<end){
+            if (char Array[start]!= char Array[end]){
                 return false;
             }
+            start++:
+            end--;
         }
         return true;
     }
-}
+     
